@@ -41,6 +41,12 @@ php artisan vendor:publish --tag="legacy_laravel_toolkit_view_library:public"
 
 Se olharmos o arquivo https://github.com/nanicas/legacy-laravel-toolkit-view-library/blob/main/resources/js/bootstrap.js, temos várias bibliotecas que precisam existir para que o `build` na etapa posterior funcione. Para isso, precisamos então executar os seguintes comandos:
 
+### Caso opte pelo Bootstrap
+
+- Laravel Ui: https://github.com/laravel/ui
+
+> Se optar por seguir sem a biblioteca acima, lembre-se de instalar manualmente as seguintes bibliotecas `sass` e `bootstrap` na sequência (versão 5).
+
 **JS - Node Modules**:
 ```
 npm install vite-plugin-static-copy@^0.17.0
@@ -49,8 +55,6 @@ npm install vite-plugin-static-copy@^0.17.0
 ```
 npm install \
   moment-timezone \
-  sass \
-  bootstrap \
   bootstrap-icons \
   jquery \
   jquery-mask-plugin \
