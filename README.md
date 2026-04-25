@@ -142,6 +142,14 @@ public/build/assets/app-a8d26880.js                 1,754.44 kB │ gzip: 379.47
 ✓ built in 8.50s
 ```
 
+## Ignorar os assets
+No arquivo `.gitignore`, não se esqueça de adicionar as linhas abaixo para que não sejam rastreadas
+```
+resources/views/vendor
+resources/vendor
+public/vendor
+```
+
 ## Ícones
 Por ora, a biblioteca configurada para lidar com os ícones é o Bootstrap Icons, sendo:
 https://icons.getbootstrap.com
