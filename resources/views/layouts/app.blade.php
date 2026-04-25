@@ -98,13 +98,13 @@
                                     class="nav-link d-block text-decoration-none dropdown-toggle"
                                     data-bs-toggle="dropdown">
                                     <i class="bi bi-person-bounding-box align-middle me-2" style="font-size: 35px"></i>
-                                    {{ \App\Helpers\Helper::getUserName(false) }}
+                                    {{ Helper::getUserName(false) }}
                                 </a>
                                 <ul class="dropdown-menu text-small" data-popper-placement="bottom-start">
                                     @if ($template_config['frontend']['header']['navbar']['user']['has_profile'])
                                         <li>
                                             <a class="dropdown-item"
-                                                href="{{ route($template_config['frontend']['header']['navbar']['user']['profile_route'], \App\Helpers\Helper::getUser()->id) }}">
+                                                href="{{ route($template_config['frontend']['header']['navbar']['user']['profile_route'], Helper::getUser()->id) }}">
                                                 <i class="bi bi-person-circle"></i> Perfil
                                             </a>
                                         </li>
@@ -128,7 +128,7 @@
                             {{-- <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ \App\Helpers\Helper::getUserName(false) }}
+                                    {{ Helper::getUserName(false) }}
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"

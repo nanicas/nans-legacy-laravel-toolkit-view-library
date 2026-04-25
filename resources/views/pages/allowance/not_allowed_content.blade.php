@@ -7,7 +7,7 @@
     </div>
 
     <div class="error-actions">
-        <a href="{{ route(App\Helpers\Helper::cleanRoute(\App\Providers\RouteServiceProvider::HOME)) }}" class="btn btn-primary btn-lg">
+        <a href="{{ route(Helper::cleanRoute(\App\Providers\RouteServiceProvider::HOME)) }}" class="btn btn-primary btn-lg">
             <span class="glyphicon glyphicon-home"></span>
             Voltar para à página inicial
         </a>
